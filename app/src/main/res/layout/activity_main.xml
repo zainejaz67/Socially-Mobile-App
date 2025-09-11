@@ -9,9 +9,7 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <!-- Centered Logo -->
     <ImageView
-        android:id="@+id/sociallyLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/socially_logo"
@@ -20,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- "from" Text -->
     <TextView
         android:id="@+id/fromText"
         android:layout_width="wrap_content"
@@ -32,13 +29,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- "SMD" Text -->
     <TextView
         android:id="@+id/smdText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SMD"
         android:textColor="#9B5A5A"
+        android:fontFamily="@font/ralewaybold"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
