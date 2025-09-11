@@ -24,7 +24,6 @@ class MainActivity2 : AppCompatActivity() {
         backIcon.setOnClickListener {
             val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
-            finish() // optional → closes current activity
         }
     }
 }
