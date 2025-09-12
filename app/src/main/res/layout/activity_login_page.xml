@@ -51,6 +51,7 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="Log in"
+            android:id="@+id/continuelogin"
             android:textColor="@color/white"
             android:fontFamily="@font/ralewaybold"
             android:background="@drawable/signupbutton" />

@@ -3,6 +3,7 @@ package com.ZainIjaz.i210753
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,6 +25,13 @@ class MainActivity2 : AppCompatActivity() {
         backIcon.setOnClickListener {
             val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
+        }
+
+        val signUp = findViewById<TextView>(R.id.signupbuttonid)
+        signUp.setOnClickListener {
+            val intent = Intent(this, mainpage::class.java)
+            startActivity(intent)
+            finish() // optional: close MainActivity2 after signup
         }
     }
 }

@@ -2,6 +2,7 @@ package com.ZainIjaz.i210753
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -31,7 +32,14 @@ class MainActivity3 : AppCompatActivity() {
         backImage.setOnClickListener {
             val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
-            finish() // optional: prevents stacking multiple LoginPages
+            finish() // prevents multiple LoginPages stacking
+        }
+
+        val loginButton = findViewById<TextView>(R.id.loginButton)
+        loginButton.setOnClickListener {
+            val intent = Intent(this, mainpage::class.java) // replace HomePage with your target Activity
+            startActivity(intent)
+            finish() // optional: close MainActivity3 after login
         }
     }
 }

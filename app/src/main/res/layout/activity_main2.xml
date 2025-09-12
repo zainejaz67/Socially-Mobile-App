@@ -171,6 +171,7 @@
             android:text="Create an Account"
             android:gravity="center"
             android:textColor="@color/white"
+            android:id="@+id/signupbuttonid"
             android:background="@drawable/signupbutton"
             android:fontFamily="@font/ralewaybold"
             android:layout_gravity="center"

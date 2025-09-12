@@ -20,16 +20,26 @@ class LoginPage : AppCompatActivity() {
             insets
         }
 
+        // Go to signup page
         val signUpText = findViewById<TextView>(R.id.newaccount)
         signUpText.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 
+        // Switch account page
         val switchAccountText = findViewById<TextView>(R.id.switchaccounts)
         switchAccountText.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
+        }
+
+        // Continue to main page after login
+        val login = findViewById<TextView>(R.id.continuelogin)
+        login.setOnClickListener {
+            val intent = Intent(this, mainpage::class.java)
+            startActivity(intent)
+            finish() // optional: close LoginPage after login
         }
     }
 }
