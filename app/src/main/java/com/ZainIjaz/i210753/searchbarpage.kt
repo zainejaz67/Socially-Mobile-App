@@ -9,22 +9,23 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class mainpage : AppCompatActivity() {
+class searchbarpage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_mainpage)
+        setContentView(R.layout.activity_searchbarpage)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val search = findViewById<ImageView>(R.id.searchbutton)
-        search.setOnClickListener {
+        val clear = findViewById<TextView>(R.id.clear)
+        clear.setOnClickListener {
             val intent =
-                Intent(this, SearchPage::class.java) // replace HomePage with your target Activity
+                Intent(this, mainpage::class.java) // replace HomePage with your target Activity
             startActivity(intent)
             finish() // optional: close MainActivity3 after login
         }
+
     }
 }
