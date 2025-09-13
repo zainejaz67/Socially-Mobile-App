@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I210753">
         <activity
+            android:name=".callpage"
+            android:exported="false" />
+        <activity
+            android:name=".chat"
+            android:exported="false" />
+        <activity
             android:name=".chatsection"
             android:exported="false" />
         <activity
