@@ -3,6 +3,7 @@ package com.ZainIjaz.i210753
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,5 +28,12 @@ class chat : AppCompatActivity() {
             finish() // optional: close MainActivity3 after login
         }
 
+        val call = findViewById<ImageView>(R.id.call)
+        call.setOnClickListener {
+            val intent =
+                Intent(this, callpage::class.java) // replace HomePage with your target Activity
+            startActivity(intent)
+            finish() // optional: close MainActivity3 after login
+        }
     }
 }

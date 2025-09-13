@@ -1,6 +1,9 @@
 package com.ZainIjaz.i210753
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,14 @@ class callpage : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val end = findViewById<TextView>(R.id.end)
+        end.setOnClickListener {
+            val intent =
+                Intent(this, chat::class.java) // replace HomePage with your target Activity
+            startActivity(intent)
+            finish() // optional: close MainActivity3 after login
         }
     }
 }
