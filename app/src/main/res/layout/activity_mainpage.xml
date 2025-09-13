@@ -46,14 +46,15 @@
 
     </LinearLayout>
 
-    <TextView
+    <View
         android:id="@+id/barline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="_______________________________________________________________"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#9B5A5A"
         app:layout_constraintTop_toBottomOf="@+id/topBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <HorizontalScrollView
         android:id="@+id/storyScroll"
@@ -324,12 +325,12 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
+    <View
         android:id="@+id/storyline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="_______________________________________________________________"
-        app:layout_constraintTop_toBottomOf="@+id/storyScroll"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#9B5A5A"
+        app:layout_constraintTop_toBottomOf="@id/storyScroll"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -591,6 +592,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="8dp"
+            android:id="@+id/heart"
             android:src="@drawable/heartbutton" />
 
         <ImageView
@@ -603,13 +605,13 @@
 
     </LinearLayout>
 
-    <TextView
+    <View
         android:id="@+id/homebarline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="_______________________________________________________________"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#9B5A5A"
         app:layout_constraintBottom_toTopOf="@+id/homebar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

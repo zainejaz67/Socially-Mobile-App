@@ -31,7 +31,7 @@ class MainActivity2 : AppCompatActivity() {
         signUp.setOnClickListener {
             val intent = Intent(this, mainpage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity2 after signup
+            finish()
         }
     }
 }

@@ -22,16 +22,24 @@ class SearchPage : AppCompatActivity() {
         val home = findViewById<ImageView>(R.id.home)
         home.setOnClickListener {
             val intent =
-                Intent(this, mainpage::class.java) // replace HomePage with your target Activity
+                Intent(this, mainpage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
         }
         val search = findViewById<LinearLayout>(R.id.search)
         search.setOnClickListener {
             val intent =
-                Intent(this, searchbarpage::class.java) // replace HomePage with your target Activity
+                Intent(this, searchbarpage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
+        }
+
+        val heart = findViewById<ImageView>(R.id.heart)
+        heart.setOnClickListener {
+            val intent =
+                Intent(this, notificationspage1::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

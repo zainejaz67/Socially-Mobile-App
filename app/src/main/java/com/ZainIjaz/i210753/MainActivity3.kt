@@ -37,9 +37,9 @@ class MainActivity3 : AppCompatActivity() {
 
         val loginButton = findViewById<TextView>(R.id.loginButton)
         loginButton.setOnClickListener {
-            val intent = Intent(this, mainpage::class.java) // replace HomePage with your target Activity
+            val intent = Intent(this, mainpage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
         }
     }
 }

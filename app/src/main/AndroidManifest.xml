@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I210753">
         <activity
+            android:name=".notificationpage2"
+            android:exported="false" />
+        <activity
+            android:name=".notificationspage1"
+            android:exported="false" />
+        <activity
             android:name=".callpage"
             android:exported="false" />
         <activity

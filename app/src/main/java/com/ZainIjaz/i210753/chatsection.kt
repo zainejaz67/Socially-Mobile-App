@@ -22,15 +22,15 @@ class chatsection : AppCompatActivity() {
 
         val back = findViewById<ImageView>(R.id.backbutton)
         back.setOnClickListener {
-            val intent =
-                Intent(this, mainpage::class.java) // replace HomePage with your target Activity
+            val intent = Intent(this, mainpage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish() // optional, only if you don’t want to return to this page
         }
+
 
         val chatLayout = findViewById<LinearLayout>(R.id.imagebar)
         chatLayout.setOnClickListener {
-            val intent = Intent(this, chat::class.java) // class reference
+            val intent = Intent(this, chat::class.java)
             startActivity(intent)
             finish()
         }

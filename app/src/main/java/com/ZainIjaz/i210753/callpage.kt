@@ -23,9 +23,9 @@ class callpage : AppCompatActivity() {
         val end = findViewById<TextView>(R.id.end)
         end.setOnClickListener {
             val intent =
-                Intent(this, chat::class.java) // replace HomePage with your target Activity
+                Intent(this, chat::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
         }
     }
 }

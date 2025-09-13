@@ -22,17 +22,25 @@ class mainpage : AppCompatActivity() {
         val search = findViewById<ImageView>(R.id.searchbutton)
         search.setOnClickListener {
             val intent =
-                Intent(this, SearchPage::class.java) // replace HomePage with your target Activity
+                Intent(this, SearchPage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
         }
 
         val send = findViewById<ImageView>(R.id.sendmessage)
         send.setOnClickListener {
             val intent =
-                Intent(this, chatsection::class.java) // replace HomePage with your target Activity
+                Intent(this, chatsection::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
+        }
+
+        val heart = findViewById<ImageView>(R.id.heart)
+        heart.setOnClickListener {
+            val intent =
+                Intent(this, notificationspage1::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

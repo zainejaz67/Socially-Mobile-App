@@ -23,17 +23,17 @@ class chat : AppCompatActivity() {
         val back = findViewById<ImageView>(R.id.backbutton)
         back.setOnClickListener {
             val intent =
-                Intent(this, chatsection::class.java) // replace HomePage with your target Activity
+                Intent(this, chatsection::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
         }
 
         val call = findViewById<ImageView>(R.id.call)
         call.setOnClickListener {
             val intent =
-                Intent(this, callpage::class.java) // replace HomePage with your target Activity
+                Intent(this, callpage::class.java)
             startActivity(intent)
-            finish() // optional: close MainActivity3 after login
+            finish()
         }
     }
 }
