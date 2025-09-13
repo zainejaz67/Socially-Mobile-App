@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I210753">
         <activity
+            android:name=".chatsection"
+            android:exported="false" />
+        <activity
             android:name=".searchbarpage"
             android:exported="false" />
         <activity
