@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I210753">
         <activity
+            android:name=".mystory"
+            android:exported="false" />
+        <activity
+            android:name=".addstory"
+            android:exported="false" />
+        <activity
+            android:name=".story"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
             android:name=".camera"
             android:exported="false" />
         <activity

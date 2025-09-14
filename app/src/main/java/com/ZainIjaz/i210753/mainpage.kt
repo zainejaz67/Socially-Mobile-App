@@ -3,6 +3,7 @@ package com.ZainIjaz.i210753
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -63,6 +64,14 @@ class mainpage : AppCompatActivity() {
         cameraopen.setOnClickListener {
             val intent =
                 Intent(this, camera::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val openstory = findViewById<LinearLayout>(R.id.story)
+        openstory.setOnClickListener {
+            val intent =
+                Intent(this, story::class.java)
             startActivity(intent)
             finish()
         }
