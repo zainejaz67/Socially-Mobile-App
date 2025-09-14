@@ -51,5 +51,13 @@ class Myprofile : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val search_bar1 = findViewById<LinearLayout>(R.id.search_bar1)
+        search_bar1.setOnClickListener {
+            val intent =
+                Intent(this, Editprofile::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
