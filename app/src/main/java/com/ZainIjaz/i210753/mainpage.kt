@@ -58,5 +58,13 @@ class mainpage : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val cameraopen = findViewById<ImageView>(R.id.camera)
+        cameraopen.setOnClickListener {
+            val intent =
+                Intent(this, camera::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
