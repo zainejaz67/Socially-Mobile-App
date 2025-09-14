@@ -3,49 +3,42 @@ package com.ZainIjaz.i210753
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SearchPage : AppCompatActivity() {
+class Myprofile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_search_page)
+        setContentView(R.layout.activity_myprofile)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val home = findViewById<ImageView>(R.id.home)
+
+        val home = findViewById<ImageView>(R.id.homeprofile)
         home.setOnClickListener {
             val intent =
                 Intent(this, mainpage::class.java)
             startActivity(intent)
             finish()
         }
-        val search = findViewById<LinearLayout>(R.id.search)
+
+        val search = findViewById<ImageView>(R.id.searchprofile)
         search.setOnClickListener {
             val intent =
-                Intent(this, searchbarpage::class.java)
+                Intent(this, SearchPage::class.java)
             startActivity(intent)
             finish()
         }
 
-        val heart = findViewById<ImageView>(R.id.heart)
+        val heart = findViewById<ImageView>(R.id.heartprofile)
         heart.setOnClickListener {
             val intent =
-                Intent(this, notificationspage1::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        val profile = findViewById<ImageView>(R.id.profile)
-        profile.setOnClickListener {
-            val intent =
-                Intent(this, Myprofile::class.java)
+                Intent(this, SearchPage::class.java)
             startActivity(intent)
             finish()
         }

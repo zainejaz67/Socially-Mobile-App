@@ -44,5 +44,13 @@ class notificationpage2 : AppCompatActivity() {
             finish()
         }
 
+        val profile = findViewById<ImageView>(R.id.profile)
+        profile.setOnClickListener {
+            val intent =
+                Intent(this, Myprofile::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }

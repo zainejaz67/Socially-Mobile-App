@@ -687,6 +687,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="8dp"
+            android:id="@+id/profile"
             android:src="@drawable/img"
             android:scaleType="centerInside" />
 

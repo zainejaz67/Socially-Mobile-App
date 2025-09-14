@@ -725,6 +725,7 @@
             android:layout_weight="1"
             android:padding="8dp"
             android:src="@drawable/img"
+            android:id="@+id/profile"
             android:scaleType="centerInside" />
 
     </LinearLayout>
