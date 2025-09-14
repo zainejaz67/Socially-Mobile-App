@@ -75,5 +75,13 @@ class mainpage : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val mystory1 = findViewById<LinearLayout>(R.id.mainstory)
+        mystory1.setOnClickListener {
+            val intent =
+                Intent(this, mystory::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

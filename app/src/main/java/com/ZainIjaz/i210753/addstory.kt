@@ -1,6 +1,8 @@
 package com.ZainIjaz.i210753
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,13 @@ class addstory : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val addstory2 = findViewById<ImageView>(R.id.dontadd)
+        addstory2.setOnClickListener {
+            val intent = Intent(this, mainpage::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
