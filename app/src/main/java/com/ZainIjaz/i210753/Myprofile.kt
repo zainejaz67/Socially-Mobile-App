@@ -3,6 +3,7 @@ package com.ZainIjaz.i210753
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -35,10 +36,18 @@ class Myprofile : AppCompatActivity() {
             finish()
         }
 
-        val heart = findViewById<ImageView>(R.id.heartprofile)
-        heart.setOnClickListener {
+        val heart1 = findViewById<ImageView>(R.id.heartprofile)
+        heart1.setOnClickListener {
             val intent =
-                Intent(this, SearchPage::class.java)
+                Intent(this, notificationspage1::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val highlight1 = findViewById<LinearLayout>(R.id.highlight)
+        highlight1.setOnClickListener {
+            val intent =
+                Intent(this, highlight::class.java)
             startActivity(intent)
             finish()
         }

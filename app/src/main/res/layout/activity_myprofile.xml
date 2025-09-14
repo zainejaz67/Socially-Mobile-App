@@ -226,6 +226,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
             android:gravity="center"
+            android:id="@+id/highlight"
             android:orientation="vertical">
 
             <FrameLayout
