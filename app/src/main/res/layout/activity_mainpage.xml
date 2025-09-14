@@ -585,6 +585,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:padding="8dp"
+            android:id="@+id/addpost"
             android:src="@drawable/storybutton" />
 
         <ImageView

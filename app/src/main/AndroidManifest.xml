@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I210753">
         <activity
+            android:name=".Addpost"
+            android:exported="false" />
+        <activity
             android:name=".Editprofile"
             android:exported="false" />
         <activity

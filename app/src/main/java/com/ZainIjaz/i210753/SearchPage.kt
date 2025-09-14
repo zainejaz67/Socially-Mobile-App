@@ -49,5 +49,13 @@ class SearchPage : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val add = findViewById<ImageView>(R.id.addpost)
+        add.setOnClickListener {
+            val intent =
+                Intent(this, Addpost::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
