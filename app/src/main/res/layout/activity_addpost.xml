@@ -79,7 +79,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Row 1 -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="120dp"
@@ -101,7 +100,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/post" />
 
-        <!-- Row 2 -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="120dp"
@@ -123,7 +121,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/post" />
 
-        <!-- Row 3 -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="120dp"

@@ -169,7 +169,6 @@
                     android:src="@drawable/post" />
             </LinearLayout>
 
-            <!-- Second row (3 equal images) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -200,7 +199,6 @@
                     android:src="@drawable/post" />
             </LinearLayout>
 
-            <!-- Third row (3 equal images) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -231,7 +229,6 @@
                     android:src="@drawable/post" />
             </LinearLayout>
 
-            <!-- Fourth row (wide left + two stacked right) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -268,7 +265,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Fifth row (3 equal images again) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

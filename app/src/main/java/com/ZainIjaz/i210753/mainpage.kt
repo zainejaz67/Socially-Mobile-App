@@ -83,5 +83,13 @@ class mainpage : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val adin = findViewById<LinearLayout>(R.id.imagebar)
+        adin.setOnClickListener {
+            val intent =
+                Intent(this, adinsprofile::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

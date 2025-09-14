@@ -4,16 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Myprofile">
+
+    <ImageView
+        android:id="@+id/addBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp"
+        android:layout_margin="8dp"/>
 
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="liza_w"
-        android:textColor="#9B5A5A"
+        android:text="Adin"
         android:fontFamily="@font/ralewaybold"
         android:textSize="18sp"
         app:layout_constraintTop_toTopOf="@+id/addBtn"
@@ -22,10 +32,10 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
-        android:id="@+id/addBtn"
+        android:id="@+id/addBtn1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/burgermenu"
+        android:src="@drawable/dotbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:padding="8dp"
@@ -67,7 +77,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="54"
+                    android:text="200"
                     android:textSize="15sp"
                     android:fontFamily="@font/ralewaybold"/>
 
@@ -88,7 +98,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="834"
+                    android:text="112k"
                     android:textSize="15sp"
                     android:fontFamily="@font/ralewaybold"/>
 
@@ -122,6 +132,8 @@
         </LinearLayout>
     </LinearLayout>
 
+
+
     <LinearLayout
         android:id="@+id/bioSection"
         android:layout_width="wrap_content"
@@ -136,9 +148,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Liza_w"
+            android:text="Adin"
             android:textSize="15sp"
             android:fontFamily="@font/ralewaybold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Blogger"
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -153,27 +171,99 @@
             android:textSize="10sp"/>
     </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/bioSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/Activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/activitystory"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Followed by zain.ejaz67 and usman.nadeem1"
+            android:src="@drawable/createstory"
+            android:fontFamily="@font/ralewaybold"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/search_bar1"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="@drawable/chatbar_rectangle"
-        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="8dp"
+        android:padding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bioSection">
+        app:layout_constraintTop_toBottomOf="@+id/bottomBar">
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
-            android:gravity="center"
-            android:text="Edit Profile"
-            android:textColor="#9C6A6A"
-            android:textSize="14sp" />
+            android:layout_weight="1"
+            android:background="@drawable/chatbar_rectangle"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:fontFamily="@font/ralewaybold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/chatbar_rectangle"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:fontFamily="@font/ralewaybold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/chatbar_rectangle"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/ralewaybold"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
     </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/storyContainer"
@@ -184,6 +274,115 @@
         app:layout_constraintTop_toBottomOf="@+id/search_bar1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:id="@+id/highlight"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_border1" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_mask"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/post" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ralewaybold"
+                android:text="Highlight 1"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_border1" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_mask"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/post" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ralewaybold"
+                android:text="Highlight 2"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_border1" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_mask"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/post" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ralewaybold"
+                android:text="Highlight 3"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -221,114 +420,6 @@
                 android:textSize="10sp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:gravity="center"
-            android:id="@+id/highlight"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/circle_border1" />
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_mask"
-                    android:clipToOutline="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/post" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/ralewaybold"
-                android:text="Friends"
-                android:textColor="@android:color/black"
-                android:textSize="10sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/circle_border1" />
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_mask"
-                    android:clipToOutline="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/post" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/ralewaybold"
-                android:text="Sports"
-                android:textColor="@android:color/black"
-                android:textSize="10sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="80dp"
-                android:layout_height="80dp">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/circle_border1" />
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_mask"
-                    android:clipToOutline="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/post" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/ralewaybold"
-                android:text="Design"
-                android:textColor="@android:color/black"
-                android:textSize="10sp" />
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -387,103 +478,106 @@
         android:background="#000000"
         app:layout_constraintTop_toBottomOf="@id/topBar" />
 
-        <GridLayout
-            android:id="@+id/postGrid"
+    <GridLayout
+        android:id="@+id/postGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/startline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 -->
+        <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:rowCount="3"
-            android:alignmentMode="alignMargins"
-            android:useDefaultMargins="true"
-            app:layout_constraintTop_toBottomOf="@id/startline"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <!-- Row 2 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <!-- Row 3 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-        </GridLayout>
+    </GridLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

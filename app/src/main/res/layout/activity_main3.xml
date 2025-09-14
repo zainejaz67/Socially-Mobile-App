@@ -142,7 +142,8 @@
         android:contentDescription="Back"
         android:padding="8dp"
         android:src="@drawable/back_black"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
