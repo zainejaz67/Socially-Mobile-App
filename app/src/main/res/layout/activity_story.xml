@@ -8,6 +8,9 @@
     android:layout_height="match_parent"
     tools:context=".story">
 
+    <!-- Top Bar -->
+
+
     <LinearLayout
         android:id="@+id/imagebar"
         android:layout_width="match_parent"
@@ -50,6 +53,9 @@
 
     </LinearLayout>
 
+    <!-- Highlight photo -->
+
+
 
     <ImageView
         android:id="@+id/storyImage"
@@ -60,6 +66,9 @@
         app:layout_constraintTop_toBottomOf="@+id/imagebar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Bottom Bar -->
+
 
     <LinearLayout
         android:id="@+id/bottomBar"

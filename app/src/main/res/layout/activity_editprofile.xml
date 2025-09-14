@@ -8,6 +8,9 @@
     android:background="@color/white"
     tools:context=".Editprofile">
 
+    <!-- TopBar -->
+
+
     <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -50,6 +53,9 @@
 
     </LinearLayout>
 
+    <!-- PhotoBar -->
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,6 +83,9 @@
             android:textStyle="bold"/>
 
     </LinearLayout>
+
+    <!-- Info Section -->
+
 
     <LinearLayout
         android:layout_width="match_parent"

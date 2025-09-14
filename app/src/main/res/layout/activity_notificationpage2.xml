@@ -8,6 +8,9 @@
     android:layout_height="match_parent"
     tools:context=".notificationpage2">
 
+    <!-- Top buttons -->
+
+
     <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="0dp"
@@ -72,6 +75,9 @@
             android:textColor="#9B5A5A" />
 
     </LinearLayout>
+
+    <!-- Notificstion section -->
+
 
     <View
         android:id="@+id/start"
@@ -162,13 +168,13 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post2"
                     android:padding="2dp"/>
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post3"
                     android:padding="2dp"/>
 
             </LinearLayout>
@@ -216,7 +222,7 @@
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/post"
+            android:src="@drawable/post5"
             />
     </LinearLayout>
 
@@ -352,39 +358,39 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post2"
                     android:padding="2dp"/>
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post3"
                     android:padding="2dp"/>
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post4"
                     android:padding="2dp"/>
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post5"
                     android:padding="2dp"/>
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post6"
                     android:padding="2dp"/>
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post7"
                     android:padding="2dp"/>
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/post"
+                    android:src="@drawable/post8"
                     android:padding="2dp"/>
 
             </LinearLayout>
@@ -432,7 +438,7 @@
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/post"
+            android:src="@drawable/post9"
             />
     </LinearLayout>
 
@@ -498,7 +504,7 @@
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/post"
+            android:src="@drawable/post5"
             />
     </LinearLayout>
 
@@ -541,7 +547,7 @@
         <ImageView
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/post"
+            android:src="@drawable/post4"
             />
     </LinearLayout>
 

@@ -31,6 +31,9 @@
         android:padding="8dp"
         android:layout_margin="8dp"/>
 
+    <!-- Followers section -->
+
+
     <LinearLayout
         android:id="@+id/imagebar"
         android:layout_width="match_parent"
@@ -122,6 +125,9 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Info -->
+
+
     <LinearLayout
         android:id="@+id/bioSection"
         android:layout_width="wrap_content"
@@ -153,6 +159,9 @@
             android:textSize="10sp"/>
     </LinearLayout>
 
+    <!-- Edit button -->
+
+
     <LinearLayout
         android:id="@+id/search_bar1"
         android:layout_width="0dp"
@@ -174,6 +183,10 @@
             android:textColor="#9C6A6A"
             android:textSize="14sp" />
     </LinearLayout>
+
+    <!-- Highlight section -->
+
+
 
     <LinearLayout
         android:id="@+id/storyContainer"
@@ -245,7 +258,7 @@
                     android:background="@drawable/circle_mask"
                     android:clipToOutline="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/post" />
+                    android:src="@drawable/post3" />
             </FrameLayout>
 
             <TextView
@@ -281,7 +294,7 @@
                     android:background="@drawable/circle_mask"
                     android:clipToOutline="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/post" />
+                    android:src="@drawable/post6" />
             </FrameLayout>
 
             <TextView
@@ -317,7 +330,7 @@
                     android:background="@drawable/circle_mask"
                     android:clipToOutline="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/post" />
+                    android:src="@drawable/post8" />
             </FrameLayout>
 
             <TextView
@@ -387,7 +400,10 @@
         android:background="#000000"
         app:layout_constraintTop_toBottomOf="@id/topBar" />
 
-        <GridLayout
+    <!-- Posts section -->
+
+
+    <GridLayout
             android:id="@+id/postGrid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -411,7 +427,63 @@
                 android:layout_height="120dp"
                 android:layout_columnWeight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+                android:src="@drawable/post1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post4" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post5" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post6" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post7" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post8" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post9" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -425,65 +497,12 @@
                 android:layout_height="120dp"
                 android:layout_columnWeight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/post" />
+                android:src="@drawable/post2" />
 
         </GridLayout>
+
+    <!-- homeBar -->
+
 
     <LinearLayout
         android:layout_width="match_parent"

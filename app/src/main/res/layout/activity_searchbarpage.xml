@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".searchbarpage">
 
+    <!-- Search bar -->
+
+
     <LinearLayout
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
@@ -108,6 +111,9 @@
             android:fontFamily="@font/ralewaybold" />
 
     </LinearLayout>
+
+    <!-- search results -->
+
 
 
     <LinearLayout

@@ -8,6 +8,9 @@
     android:background="@android:color/white"
     tools:context=".MainActivity3">
 
+    <!-- Input fields and login section -->
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

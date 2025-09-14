@@ -19,6 +19,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Main Activity -->
+
+
         <ImageView
             android:id="@+id/backbutton"
             android:layout_width="40dp"
@@ -53,6 +56,8 @@
             android:contentDescription="Call"
             android:padding="8dp"/>
     </LinearLayout>
+
+    <!-- Message Bar -->
 
     <LinearLayout
         android:id="@+id/search"
@@ -107,6 +112,8 @@
             android:textSize="14sp"
             android:textColor="#000000"/>
     </LinearLayout>
+
+    <!-- Message -->
 
 
     <TextView

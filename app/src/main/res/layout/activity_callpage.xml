@@ -9,6 +9,9 @@
     tools:context=".callpage"
     android:background="#9C6A6A">
 
+    <!-- call picture -->
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,6 +45,8 @@
             android:textSize="18sp" />
 
     </LinearLayout>
+
+    <!-- Call ending section -->
 
     <LinearLayout
         android:layout_width="match_parent"

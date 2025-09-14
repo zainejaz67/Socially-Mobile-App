@@ -56,6 +56,8 @@
         app:layout_constraintEnd_toEndOf="@+id/socially"
         app:layout_constraintBaseline_toBottomOf="@id/socially" />
 
+    <!-- Picture -->
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,6 +69,9 @@
         app:layout_constraintEnd_toEndOf="@+id/line"
         app:layout_constraintTop_toTopOf="@id/line"
         app:layout_constraintHorizontal_bias="0.477" />
+
+    <!-- Input fields -->
+
 
     <LinearLayout
         android:id="@+id/signup_section"
@@ -164,6 +169,9 @@
             android:inputType="numberPassword"
             android:textColor="@color/white"
             android:backgroundTint="@color/white" />
+
+        <!-- Button -->
+
 
         <TextView
             android:layout_width="300dp"

@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".chatsection">
 
+    <!-- TopBar -->
+
+
     <ImageView
         android:id="@+id/backbutton"
         android:layout_width="40dp"
@@ -41,6 +44,9 @@
         android:padding="8dp"
         android:layout_margin="8dp"/>
 
+    <!-- SearchBar -->
+
+
     <LinearLayout
         android:id="@+id/search"
         android:layout_width="match_parent"
@@ -66,6 +72,9 @@
             android:textSize="14sp"
             android:textColor="#9C6A6A" />
     </LinearLayout>
+
+    <!-- Chats -->
+
 
     <LinearLayout
         android:id="@+id/imagebar"
